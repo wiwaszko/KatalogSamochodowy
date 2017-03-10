@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  
+  table
+    thead
+        tr
+            th nr
+            th marka
+            th model
+            th rok
+            th pojemnosc silnika
+            th paliwo
+            th moc
+            th naped
+            th opis
+            th fabryka
+            
+    thbody
+        each item in dane
+            tr
+                td #{item.id}
+                td #{item.brandName}
+                td #{item.model}
+                td #{item.modelYear}
+                td #{item.engineCapacity}
+                td #{item.fuel}
+                td #{item.enginePower}
+                td #{item.wheelDrive}
+                td #{item.carDescription}
+                td #{item.factoryName}
+                
